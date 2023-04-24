@@ -1,0 +1,44 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:prettier/recommended",
+        "prettier"
+    ],
+    "overrides": [],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": ["react"],
+    "rules": {
+        "react/react-in-jsx-scope": "off",
+        "no-unused-vars": "error",
+        "no-duplicate-imports": "error",
+        "quotes": ["error", "double"],
+        "indent": ["warn", 4, { "SwitchCase": 1 }],
+        "no-multiple-empty-lines": [2, { "max": 2 }],
+        "arrow-body-style": [0, "never"],
+        "import/no-unresolved": [0],
+        "react/prop-types": 0,
+        "react/sort-comp": 0,
+        "react/jsx-indent": ["warn", 4],
+        "react/jsx-indent-props": ["warn", 4],
+        "react/destructuring-assignment": ["off"],
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "sort-imports": [
+            "error",
+            {
+                "ignoreCase": false,
+                "ignoreDeclarationSort": false,
+                "ignoreMemberSort": false,
+                "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+                "allowSeparatedGroups": true
+            }
+        ]
+    }
+}
